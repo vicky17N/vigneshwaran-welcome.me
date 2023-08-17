@@ -155,6 +155,7 @@ header .navbar ul li a:hover{
   background-image: url(https://cdn.dribbble.com/users/285475/screenshots/2083086/dribbble_1.gif);
   height: 400px;
   background-position: center;
+  background-repeat: no-repeat;
 }
 .msg {
     display: flex;
