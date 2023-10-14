@@ -80,7 +80,7 @@ document.addEventListener('visibilitychange',
 
 // <!-- typed js effect starts -->
 var typed = new Typed(".typing-text", {
-  strings: ["web development","frontend development","web designing",  ],
+  strings: ["web development","frontend development","web designing","Software Development"  ],
   loop: true,
   typeSpeed: 50,
   backSpeed: 25,
@@ -220,12 +220,7 @@ const srtop = ScrollReveal({
   reset: true
 });
 
-const srtop2 = ScrollReveal({
-  origin: 'right',
-  distance: '5000px',
-  duration: 700,
-  reset: true
-});
+
 
 
 /* SCROLL HOME */
@@ -233,7 +228,7 @@ srtop.reveal('.home .content h3', { delay: 200 });
 srtop.reveal('.home .content p', { delay: 200 });
 srtop.reveal('.home .content .btn', { delay: 200 });
 
-srtop2.reveal('.home .image', { delay: 400 });
+srtop.reveal('.home .image', { delay: 400 });
 srtop.reveal('.home .linkedin', { interval: 600 });
 srtop.reveal('.home .github', { interval: 800 });
 srtop.reveal('.home .twitter', { interval: 1000 });
