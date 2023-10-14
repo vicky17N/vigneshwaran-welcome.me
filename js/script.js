@@ -216,14 +216,14 @@ s0.parentNode.insertBefore(s1,s0);
 const srtop = ScrollReveal({
   origin: 'left',
   distance: '5000px',
-  duration: 900,
+  duration: 700,
   reset: true
 });
 
 const srtop2 = ScrollReveal({
   origin: 'right',
   distance: '5000px',
-  duration: 900,
+  duration: 700,
   reset: true
 });
 
