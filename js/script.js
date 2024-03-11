@@ -212,6 +212,12 @@ s0.parentNode.insertBefore(s1,s0);
 <!--End of Tawk.to Script-->
 
 
+ScrollReveal({
+  origin: 'right',
+  distance: '5000px',
+  duration: 1000,
+  reset: true
+}).reveal('.home .image', { delay: 400 });
 /* ===== SCROLL REVEAL ANIMATION ===== */
 const srtop = ScrollReveal({
   origin: 'left',
