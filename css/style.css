@@ -703,7 +703,7 @@ header .navbar ul li a:hover {
   transform: scale(0.96) translate(0px, 3.2px);
 }
 .Projects li{
-  list-style:none;
+  list-style: none;
 }
 .Projects .box-container .box .content {
   position: relative;
