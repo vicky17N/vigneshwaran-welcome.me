@@ -100,7 +100,7 @@ VanillaTilt.init(document.querySelectorAll(".tilt"), {
      document.querySelector('.loader-container').classList.add('fade-out');
  }
  function fadeOut() {
-     setInterval(loader, 1000);
+     setInterval(loader, 3000);
  }
  window.onload = fadeOut;
 // pre loader end
