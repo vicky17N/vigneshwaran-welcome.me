@@ -166,3 +166,83 @@ srtop.reveal('.experience .timeline .container', { interval: 400 });
 /* SCROLL CONTACT */
 srtop.reveal('.contact .container', { delay: 200 });
 srtop.reveal('.contact .container .form-group', { delay: 200 });
+
+
+
+
+document.addEventListener('copy', (event) => {
+    event.preventDefault();  // Prevent the default copy behavior
+
+    // You can modify the clipboard content or just clear it
+    event.clipboardData.setData('text/plain', '');  // Clears the copied content
+
+    alert("Don't copy anything");
+});
+
+        // Disable right-click context menu
+        document.addEventListener('contextmenu', function(e) {
+            e.preventDefault();
+        });
+
+        // Disable image dragging
+        document.querySelectorAll('img').forEach(img => {
+            img.addEventListener('dragstart', function(e) {
+                e.preventDefault();
+            });
+        });
+
+        // Disable Ctrl+S, Ctrl+P, and other save actions
+        document.addEventListener('keydown', function(e) {
+            if (e.ctrlKey && (e.key === 's' || e.key === 'p' || e.key === 'u' || e.key === 'Shift+I')) {
+                e.preventDefault();
+            }
+        });
+
+
+
+// Disable PrintScreen (PrtSc)
+document.addEventListener("keyup", function (event) {
+    if (event.key === "PrintScreen") {
+        let overlay = document.createElement("div");
+        overlay.style.position = "fixed";
+        overlay.style.top = "0";
+        overlay.style.left = "0";
+        overlay.style.width = "100vw";
+        overlay.style.height = "100vh";
+        overlay.style.background = "black";
+        overlay.style.zIndex = "9999";
+        document.body.appendChild(overlay);
+        setTimeout(() => document.body.removeChild(overlay), 500);
+        alert("Screenshots are disabled on this website.");
+    }
+});
+
+// Disable Right-Click
+document.addEventListener("contextmenu", function (event) {
+    event.preventDefault();
+    alert("Right-click is disabled.");
+});
+
+// Disable Developer Tools (F12, Ctrl + Shift + I/J, Ctrl + U)
+document.addEventListener("keydown", function (event) {
+    if (
+        event.keyCode === 123 || // F12
+        (event.ctrlKey && event.shiftKey && event.key === "I") || // Ctrl + Shift + I
+        (event.ctrlKey && event.shiftKey && event.key === "J") || // Ctrl + Shift + J
+        (event.ctrlKey && event.key === "U") // Ctrl + U
+    ) {
+        event.preventDefault();
+        alert("Developer tools are disabled.");
+    }
+});
+
+// Disable Print (Ctrl + P)
+document.addEventListener("keydown", function (event) {
+    if (event.ctrlKey && event.key === "p") {
+        event.preventDefault();
+        alert("Printing is disabled.");
+    }
+});
+
+
+
